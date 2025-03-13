@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Schemes - Farmer Awareness Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #E5E4CC;
+            text-align: center;
+        }
+        header {
+            background-color: #698474;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            position: relative;
+            overflow: hidden;
+        }
+        header #schemes-link {
+            position: absolute;
+            left: -100%; /* Start off-screen */
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #889E81;
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: left 0.5s ease-in-out;
+        }
+        header #home-link {
+            position: absolute;
+            right: -100%; /* Start off-screen */
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #889E81;
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: right 0.5s ease-in-out;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: #BAC7A7;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #698474;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .abstract {
+            background-color: #E5E4CC;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .schemes-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .scheme-card {
+            background-color: #E5E4CC;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .scheme-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+        .scheme-card h3 {
+            color: #698474;
+            margin-bottom: 10px;
+        }
+        .scheme-card p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="gov-schemes.html" id="schemes-link">📜 Government Schemes</a>
+        🌱 Farmer Awareness Hub
+        <a href="index.html" id="home-link">🏠 Back to Home</a>
+    </header>
+
+    <div class="container">
+        <h2>Government Schemes for Farmers</h2>
+        
+        <!-- Abstract Section -->
+        <div class="abstract">
+            <p>
+                This page provides information about various government schemes designed to support farmers. These schemes aim to help farmers with crop production, machinery, fertilizers, and other agricultural needs. The government is committed to empowering farmers through financial assistance, training, and resources to improve their livelihoods and agricultural productivity.
+            </p>
+        </div>
+
+        <!-- Schemes Showcase -->
+        <div class="schemes-container">
+            <div class="scheme-card">
+                <h3>Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)</h3>
+                <p>Provides financial assistance of ₹6,000 per year to small and marginal farmers.</p>
+            </div>
+            <div class="scheme-card">
+                <h3>Pradhan Mantri Fasal Bima Yojana (PMFBY)</h3>
+                <p>Crop insurance scheme to protect farmers against crop loss due to natural calamities.</p>
+            </div>
+            <div class="scheme-card">
+                <h3>Kisan Credit Card (KCC)</h3>
+                <p>Provides farmers with timely access to credit for agricultural and allied activities.</p>
+            </div>
+            <div class="scheme-card">
+                <h3>National Mission for Sustainable Agriculture (NMSA)</h3>
+                <p>Promotes sustainable agriculture practices to increase productivity and resilience.</p>
+            </div>
+            <div class="scheme-card">
+                <h3>Paramparagat Krishi Vikas Yojana (PKVY)</h3>
+                <p>Encourages organic farming practices among farmers.</p>
+            </div>
+            <div class="scheme-card">
+                <h3>Soil Health Card Scheme</h3>
+                <p>Provides farmers with soil health cards to improve soil fertility and productivity.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Animation to slide in the Schemes and Back to Home buttons
+        window.onload = function () {
+            const schemesLink = document.getElementById('schemes-link');
+            const homeLink = document.getElementById('home-link');
+
+            setTimeout(() => {
+                schemesLink.style.left = '20px'; /* Slide in from the left */
+                homeLink.style.right = '20px'; /* Slide in from the right */
+            }, 100);
+        };
+    </script>
+
+</body>
+</html>
